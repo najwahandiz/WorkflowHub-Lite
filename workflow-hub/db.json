@@ -1,0 +1,85 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Étudier React",
+      "description": "Regarder le cours sur les composants et les props",
+      "priority": "Urgente",
+      "status": "todo",
+      "isDeleted": false,
+      "order": 1,
+      "createdAt": "2025-12-08T09:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "title": "Créer le squelette du projet",
+      "description": "Initialiser Vite + installer dépendances",
+      "priority": "Moyenne",
+      "status": "todo",
+      "isDeleted": false,
+      "order": 2,
+      "createdAt": "2025-12-08T09:10:00.000Z"
+    },
+    {
+      "id": 3,
+      "title": "Composer l'UI des colonnes",
+      "description": "Faire les composants Column et TaskCard",
+      "priority": "Moyenne",
+      "status": "in-progress",
+      "isDeleted": false,
+      "order": 1,
+      "createdAt": "2025-12-08T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "title": "Pop-up Ajouter une tâche",
+      "description": "Créer le modal pour ajouter et valider une tâche",
+      "priority": "Urgente",
+      "status": "in-progress",
+      "isDeleted": false,
+      "order": 2,
+      "createdAt": "2025-12-08T10:20:00.000Z"
+    },
+    {
+      "id": 5,
+      "title": "Tester Drag & Drop",
+      "description": "Vérifier déplacement dans la même colonne et persistance",
+      "priority": "Basse",
+      "status": "done",
+      "isDeleted": false,
+      "order": 1,
+      "createdAt": "2025-12-08T11:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "title": "Ecrire README",
+      "description": "Expliquer comment lancer le projet et JSON Server",
+      "priority": "Basse",
+      "status": "done",
+      "isDeleted": false,
+      "order": 2,
+      "createdAt": "2025-12-08T11:30:00.000Z"
+    },
+    {
+      "id": 7,
+      "title": "Tâche supprimée exemple",
+      "description": "Ceci est dans la corbeille (isDeleted = true)",
+      "priority": "Moyenne",
+      "status": "todo",
+      "isDeleted": true,
+      "order": 1,
+      "createdAt": "2025-12-08T12:00:00.000Z",
+      "deletedAt": "2025-12-08T12:30:00.000Z"
+    },
+    {
+      "id": 8,
+      "title": "Ajouter validations form",
+      "description": "Empêcher titre vide, limiter longueur",
+      "priority": "Urgente",
+      "status": "todo",
+      "isDeleted": false,
+      "order": 3,
+      "createdAt": "2025-12-08T12:15:00.000Z"
+    }
+  ]
+}
