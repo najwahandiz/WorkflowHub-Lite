@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #10192D;
+    color: aliceblue;
+}
+
+.task-board{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    border: solid 1px #10192D;
+    border-radius: 10px;
+}

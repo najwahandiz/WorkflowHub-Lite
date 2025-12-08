@@ -1,0 +1,22 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 5px;
+    padding: 0;
+}
+
+
+.card-task{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 1px 15px;
+    padding-left: 8px;  
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    max-height: 250px;
+    height: 250px;
+    width: 350px;
+    max-width: 350px;
+    
+}
