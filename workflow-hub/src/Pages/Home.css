@@ -14,3 +14,32 @@ body {
     border: solid 1px #10192D;
     border-radius: 10px;
 }
+
+.heroSection{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #0F3460;
+    border-radius: 10px;
+    margin: 15px;
+}
+
+.addBtn{
+    background-color: #16213C;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.addBtn:hover {
+    background-color: #0a2445;
+    transform: scale(1.05);
+}
+
+.addBtn:active {
+    transform: scale(0.98);
+}

@@ -5,18 +5,63 @@
     padding: 0;
 }
 
-
 .card-task{
     display: flex;
     flex-direction: column;
-    gap: 2px;
+    gap: 5px;
+    justify-content: center;
     margin: 1px 15px;
     padding-left: 8px;  
     border-radius: 5px;
     border: 1px solid #ccc;
-    max-height: 250px;
+    max-height: 200px;
     height: 250px;
     width: 350px;
-    max-width: 350px;
-    
+    max-width: 400px;
+    transition: all 0.3s ease;
+}
+
+.card-task:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-color: #0F3460;
+}    
+
+.card-task h4,
+.card-task p{
+    margin: 5px;
+    padding: 5px;
+    transition: color 0.3s ease;
+}
+
+.card-task:hover h4,
+.card-task:hover p {
+    color: #0F3460;
+}
+
+.divBtn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 20px;
+}
+
+.updateBtn , .deleteBtn{
+    background-color: #0F3460;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 0;
+}
+
+.updateBtn:hover, .deleteBtn:hover {
+    background-color: #0a2445;
+    transform: scale(1.05);
+}
+
+.updateBtn:active, .deleteBtn:active {
+    transform: scale(0.98);
 }

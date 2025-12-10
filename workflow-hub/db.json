@@ -1,79 +1,46 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "title": "Étudier React",
-      "description": "Regarder le cours sur les composants et les props",
-      "priority": "Urgente",
+      "title": "title test",
+      "description": "des test",
+      "priority": "Medium",
       "status": "todo",
-      "isDeleted": false,
-      "order": 1
+      "id": "1",
+      "isDeleted": false
     },
     {
-      "id": 2,
-      "title": "Créer le squelette du projet",
-      "description": "Initialiser Vite + installer dépendances",
-      "priority": "Moyenne",
-      "status": "todo",
-      "isDeleted": false,
-      "order": 2
+      "title": "Composer",
+      "description": "Faire ",
+      "priority": "Low",
+      "status": "done",
+      "id": "3"
     },
     {
-      "id": 3,
-      "title": "Composer l'UI des colonnes",
-      "description": "Faire les composants Column et TaskCard",
-      "priority": "Moyenne",
-      "status": "in-progress",
-      "isDeleted": false,
-      "order": 3
-      
-    },
-    {
-      "id": 4,
+      "id": "4",
       "title": "Pop-up Ajouter une tâche",
       "description": "Créer le modal pour ajouter et valider une tâche",
-      "priority": "Urgente",
+      "priority": "High",
       "status": "in-progress",
       "isDeleted": false,
       "order": 4
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Tester Drag & Drop",
       "description": "Vérifier déplacement dans la même colonne et persistance",
-      "priority": "Basse",
+      "priority": "Low",
       "status": "done",
       "isDeleted": false,
       "order": 5
     },
     {
-      "id": 6,
-      "title": "Ecrire README",
-      "description": "Expliquer comment lancer le projet et JSON Server",
-      "priority": "Basse",
-      "status": "done",
-      "isDeleted": false,
-      "order": 6
-    },
-    {
-      "id": 7,
+      "id": "7",
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
-      "priority": "Moyenne",
-      "status": "todo",
-      "isDeleted": true,
-      "order": 7
-      
-    },
-    {
-      "id": 8,
-      "title": "Ajouter validations form",
-      "description": "Empêcher titre vide, limiter longueur",
-      "priority": "Urgente",
+      "priority": "Medium",
       "status": "todo",
       "isDeleted": false,
-      "order": 8
-      
+      "order": 7
     }
   ]
 }
