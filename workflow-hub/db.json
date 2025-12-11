@@ -1,7 +1,7 @@
 {
   "tasks": [
     {
-      "id": 1,
+      "id": "1",
       "title": "Étudier React",
       "description": "Regarder le cours sur les composants et les props",
       "priority": "Urgente",
@@ -11,7 +11,7 @@
       "createdAt": "2025-12-08T09:00:00.000Z"
     },
     {
-      "id": 2,
+      "id": "2",
       "title": "Créer le squelette du projet",
       "description": "Initialiser Vite + installer dépendances",
       "priority": "Moyenne",
@@ -21,7 +21,7 @@
       "createdAt": "2025-12-08T09:10:00.000Z"
     },
     {
-      "id": 3,
+      "id": "3",
       "title": "Composer l'UI des colonnes",
       "description": "Faire les composants Column et TaskCard",
       "priority": "Moyenne",
@@ -31,7 +31,7 @@
       "createdAt": "2025-12-08T10:00:00.000Z"
     },
     {
-      "id": 4,
+      "id": "4",
       "title": "Pop-up Ajouter une tâche",
       "description": "Créer le modal pour ajouter et valider une tâche",
       "priority": "Urgente",
@@ -41,7 +41,7 @@
       "createdAt": "2025-12-08T10:20:00.000Z"
     },
     {
-      "id": 5,
+      "id": "5",
       "title": "Tester Drag & Drop",
       "description": "Vérifier déplacement dans la même colonne et persistance",
       "priority": "Basse",
@@ -51,7 +51,7 @@
       "createdAt": "2025-12-08T11:00:00.000Z"
     },
     {
-      "id": 6,
+      "id": "6",
       "title": "Ecrire README",
       "description": "Expliquer comment lancer le projet et JSON Server",
       "priority": "Basse",
@@ -61,7 +61,7 @@
       "createdAt": "2025-12-08T11:30:00.000Z"
     },
     {
-      "id": 7,
+      "id": "7",
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
       "priority": "Moyenne",
@@ -72,7 +72,7 @@
       "deletedAt": "2025-12-08T12:30:00.000Z"
     },
     {
-      "id": 8,
+      "id": "8",
       "title": "Ajouter validations form",
       "description": "Empêcher titre vide, limiter longueur",
       "priority": "Urgente",
@@ -80,6 +80,27 @@
       "isDeleted": false,
       "order": 3,
       "createdAt": "2025-12-08T12:15:00.000Z"
+    },
+    {
+      "id": "0701",
+      "title": "test second",
+      "description": "secon descripion test",
+      "priority": "Urgent",
+      "status": "To Do"
+    },
+    {
+      "id": "b3c8",
+      "title": "hhhh",
+      "description": "ffff",
+      "priority": "Urgent",
+      "status": "To Do"
+    },
+    {
+      "id": "b7d3",
+      "title": "rrrrr",
+      "description": "ghiz",
+      "priority": "Medium",
+      "status": "Done"
     }
   ]
 }
