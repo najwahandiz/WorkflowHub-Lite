@@ -1,0 +1,22 @@
+.taskColumn{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    background-color: #16213C;
+    margin: 15px;
+    border-radius: 14px;
+}
+
+.taskColumn h2{
+    text-align: left;
+    padding-left: 15px;
+    color: aliceblue;
+    padding-top: 10px;
+    margin-bottom: 0px;
+}
+
+.taskColumn hr{
+    border: 1px solid #0F3460;
+    margin: 0;
+    
+}
