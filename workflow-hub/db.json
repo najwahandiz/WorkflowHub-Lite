@@ -16,13 +16,11 @@
       "id": "3"
     },
     {
-      "id": "4",
       "title": "Pop-up Ajouter une tâche",
       "description": "Créer le modal pour ajouter et valider une tâche",
       "priority": "High",
-      "status": "in-progress",
-      "isDeleted": false,
-      "order": 4
+      "status": "todo",
+      "id": "4"
     },
     {
       "id": "5",
@@ -34,13 +32,11 @@
       "order": 5
     },
     {
-      "id": "7",
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
       "priority": "Medium",
-      "status": "todo",
-      "isDeleted": false,
-      "order": 7
+      "status": "in-progress",
+      "id": "7"
     }
   ]
 }

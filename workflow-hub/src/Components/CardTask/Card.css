@@ -1,4 +1,93 @@
-.body{
+.card-task {
+  background: #0f1629;
+  padding: 20px;
+  border-radius: 14px;
+  border: #9fb0d1 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: 0.3s;
+  position: relative;
+  border-left: 5px solid transparent;
+}
+
+/* Card hover */
+.card-task:hover {
+  transform: translateY(-4px);
+}
+
+/* Title */
+.card-task h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+/* Description */
+.card-task p {
+  margin: 0;
+  font-size: 13px;
+  color: #9fb0d1;
+}
+
+/* PRIORITY BADGES (exact style) */
+.priority-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  width: fit-content;
+}
+
+.priority-low {
+  background: rgba(0,180,80,0.2);
+  color: #00c853;
+}
+
+.priority-medium {
+  background: rgba(255,180,0,0.2);
+  color: #ffb300;
+}
+
+.priority-urgent {
+  background: rgba(255,0,0,0.2);
+  color: #ff5252;
+}
+
+/* Buttons */
+.divBtn {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.updateBtn,
+.deleteBtn {
+  border: none;
+  background: #1e293b;
+  color: #dbe2f0;
+  padding: 6px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.updateBtn:hover,
+.deleteBtn:hover {
+  background: #334155;
+  transform: scale(1.05);
+}
+
+/* LEFT COLOR BORDER BASED ON PRIORITY */
+.card-task.low { border-left-color: #00c853; }
+.card-task.medium { border-left-color: #ffb300; }
+
+
+
+/* .body{
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     margin: 5px;
@@ -64,4 +153,4 @@
 
 .updateBtn:active, .deleteBtn:active {
     transform: scale(0.98);
-}
+} */

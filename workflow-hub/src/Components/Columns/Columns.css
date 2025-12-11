@@ -1,4 +1,48 @@
-.taskColumn{
+.taskColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background-color: #111a2e;
+  padding: 20px;
+  border-radius: 16px;
+  width: 360px;
+  height: auto;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.35);
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Column header */
+.taskColumn h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+/* Divider line */
+.taskColumn hr {
+  border: none;
+  height: 1px;
+  background: rgba(255,255,255,0.1);
+  margin: 0 0 10px 0;
+}
+
+/* (Optional) add icons like screenshot */
+.taskColumn h2::before {
+  content: "🕒"; /* Change based on column */
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+
+
+
+
+/* .taskColumn{
     display: flex;
     flex-direction: column;
     gap: 18px;
@@ -19,4 +63,4 @@
     border: 1px solid #0F3460;
     margin: 0;
     
-}
+} */
