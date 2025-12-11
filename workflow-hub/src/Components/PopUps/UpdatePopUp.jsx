@@ -51,7 +51,7 @@ export default function UpdatePopUp({task, closePopUp ,fetchTasks}) {
                 <select name="priority" value={formData.priority} onChange={handleChange}>
                     <option value="Low">Low</option>
                     <option value="Medium">Medium</option>
-                    <option value="High">High</option>
+                    <option value="Urgent">Urgent</option>
                 </select>
 
                 <label>Status</label>

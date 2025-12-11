@@ -18,8 +18,6 @@ export default function deletePopUp({task, closePopUp, fetchTasks}) {
   }        
 
 
-  
-
   return (
     <div className='popUpOverlay'>
       <div className='popUpContainer'>

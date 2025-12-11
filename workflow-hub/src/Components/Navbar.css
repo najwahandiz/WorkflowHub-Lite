@@ -1,0 +1,41 @@
+.Navbar{
+    height:130px;
+  width: 100% auto;
+  background-color: rgb(19, 14, 14,0.9);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  box-shadow: 0 4px 6px rgba(72, 38, 221, 0.1);
+  top: 0;
+}
+
+.logo{
+  width: 120px;  
+  height: 80px;
+  margin-left: 0px;
+}
+.Nav-title{
+    color: white;
+    font-size: large;
+    display:flex;
+    justify-content: center;
+
+
+}
+.Nav-links a {
+  color: blue;
+  font-size: large;
+  
+  font-size: 1.1rem;
+  font-weight: 200;
+  transition: all 0.3s ease;
+ padding: 6px 20px;
+  border-radius: 4px;
+}
+
+.Nav-links a:hover {
+  color: white;
+  background-color: rgba(255, 255, 255, 0.1); /* Light transparent background */
+  transform: translateY(-2px);
+}

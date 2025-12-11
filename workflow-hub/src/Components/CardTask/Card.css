@@ -1,6 +1,6 @@
 .card-task {
   background: #0f1629;
-  padding: 20px;
+  padding: 28px;
   border-radius: 14px;
   border: #9fb0d1 1px solid;
   display: flex;
@@ -42,37 +42,46 @@
 }
 
 .priority-low {
-  background: rgba(0,180,80,0.2);
-  color: #00c853;
+  background: rgba(98, 165, 128, 0.774);
+  color: #054e1d;
 }
 
 .priority-medium {
-  background: rgba(255,180,0,0.2);
-  color: #ffb300;
+  background: rgba(255, 179, 0, 0.295);
+  color: #ffb300d8;
 }
 
 .priority-urgent {
-  background: rgba(255,0,0,0.2);
-  color: #ff5252;
+  background: rgba(187, 46, 46, 0.281);
+  color: #ff00007c;
 }
 
 /* Buttons */
 .divBtn {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  max-height: 38px;
+  margin-top: 2px;
+  margin-bottom: 0px;
 }
 
 .updateBtn,
-.deleteBtn {
+.deleteBtn{
   border: none;
-  background: #1e293b;
+  background: #05275e;
   color: #dbe2f0;
-  padding: 6px 12px;
+  padding: 8px 22px;
   border-radius: 8px;
   cursor: pointer;
   font-size: 12px;
   transition: 0.3s;
+}
+
+.divBtn h5 {
+  margin: 0;
+  font-size: 12px;
+  /* color: #9fb0d1; */
+  align-self: center;
 }
 
 .updateBtn:hover,
@@ -83,74 +92,9 @@
 
 /* LEFT COLOR BORDER BASED ON PRIORITY */
 .card-task.low { border-left-color: #00c853; }
-.card-task.medium { border-left-color: #ffb300; }
+.card-task.medium { border-left-color: #ffb30080; }
+.card-task.urgent { border-left-color:  rgba(226, 52, 52, 0.911); }
 
 
 
-/* .body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 5px;
-    padding: 0;
-}
 
-.card-task{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    margin: 1px 15px;
-    padding-left: 8px;  
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    max-height: 200px;
-    height: 250px;
-    width: 350px;
-    max-width: 400px;
-    transition: all 0.3s ease;
-}
-
-.card-task:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-color: #0F3460;
-}    
-
-.card-task h4,
-.card-task p{
-    margin: 5px;
-    padding: 5px;
-    transition: color 0.3s ease;
-}
-
-.card-task:hover h4,
-.card-task:hover p {
-    color: #0F3460;
-}
-
-.divBtn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 20px;
-}
-
-.updateBtn , .deleteBtn{
-    background-color: #0F3460;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin-top: 0;
-}
-
-.updateBtn:hover, .deleteBtn:hover {
-    background-color: #0a2445;
-    transform: scale(1.05);
-}
-
-.updateBtn:active, .deleteBtn:active {
-    transform: scale(0.98);
-} */
