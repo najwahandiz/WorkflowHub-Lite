@@ -18,8 +18,8 @@
     {
       "title": "Pop-up Ajouter ",
       "description": "Créer le modal pour ajouter et valider une ",
-      "priority": "Medium",
-      "status": "in-progress",
+      "priority": "High",
+      "status": "done",
       "id": "4"
     },
     {
