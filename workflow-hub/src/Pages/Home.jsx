@@ -25,6 +25,7 @@ export default function Home() {
         setShowUpdatePopUp(true)
     }
 
+    
     function handelDeleteClick(task){
         setTaskToDelete(task)
         setShowDeletePopUp(true)
@@ -42,6 +43,7 @@ export default function Home() {
     }, [])
 
 
+
     const addTask = async (newTask) => {
     try {
       const res = await axios.post("http://localhost:3001/tasks", newTask);
@@ -55,6 +57,7 @@ export default function Home() {
   };
 
         
+
   return (
     <div>
         <section className='heroSection'>
