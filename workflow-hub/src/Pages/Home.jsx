@@ -64,7 +64,7 @@ export default function Home() {
   };
 
    // moveTask: reorder tasks inside the same column (status)
-  const moveTask = (status, fromIndex, toIndex) => {
+    const moveTask = (status, fromIndex, toIndex) => {
     // get column tasks sorted by order
     const columnTasks = tasks
       .filter(t => t.status === status && !t.isDeleted)
@@ -101,6 +101,33 @@ export default function Home() {
       })
   }
 
+    // changeTaskStatus: move task to a different column (different status)
+  const changeTaskStatus = (taskId, newStatus) => {
+    const task = tasks.find(t => t.id === taskId)
+    if (!task || task.status === newStatus) return
+
+    // get the max order in the destination column
+    const destColumnTasks = tasks.filter(t => t.status === newStatus && !t.isDeleted)
+    const maxOrder = destColumnTasks.reduce((max, t) => {
+      const o = Number(t.order) || 0
+      return o > max ? o : max
+    }, 0)
+
+    // update task with new status and order
+    const updatedTask = { ...task, status: newStatus, order: maxOrder + 1 }
+
+    // update local state immediately
+    const updatedTasks = tasks.map(t => t.id === taskId ? updatedTask : t)
+    setTasks(updatedTasks)
+
+    // persist to server
+    axios.put(`http://localhost:3001/tasks/${taskId}`, updatedTask)
+      .catch(err => {
+        console.error('Error updating task status:', err)
+        fetchTasks() // revert on error
+      })
+  }
+
 
     
   return (
@@ -116,28 +143,34 @@ export default function Home() {
         <section className='task-board'>
             <div className='task-column-todo'>
                 <Columns
-                    task={tasks.filter(t=>(t.status==="todo" && !t.isDeleted))} 
-                    openUpdatePop={handelUpdateClick} 
-                    openDeletePop={handelDeleteClick} 
-                    moveTask={moveTask} 
+                  status="todo"
+                  task={tasks.filter(t=>(t.status==="todo" && !t.isDeleted))} 
+                  openUpdatePop={handelUpdateClick} 
+                  openDeletePop={handelDeleteClick} 
+                  moveTask={moveTask}
+                  changeTaskStatus={changeTaskStatus} 
                 />
             </div>
 
             <div className='task-column-inprogress'>
-                <InProgressCol
-                     task={tasks.filter(t=>(t.status==="in-progress" && !t.isDeleted))} 
-                     openUpdatePop={handelUpdateClick} 
-                     openDeletePop={handelDeleteClick}
-                     moveTask={moveTask}
-                />
+                 <InProgressCol
+                   status="in-progress"
+                   task={tasks.filter(t=>(t.status==="in-progress" && !t.isDeleted))} 
+                   openUpdatePop={handelUpdateClick} 
+                   openDeletePop={handelDeleteClick}
+                   moveTask={moveTask}
+                   changeTaskStatus={changeTaskStatus}
+                 />
             </div>
 
             <div className='task-column-done'>
                 <DoneCol 
-                    task={tasks.filter(t=>(t.status==="done" && !t.isDeleted))}
-                    openUpdatePop={handelUpdateClick}
-                    openDeletePop={handelDeleteClick}
-                    moveTask={moveTask}
+                  status="done"
+                  task={tasks.filter(t=>(t.status==="done" && !t.isDeleted))}
+                  openUpdatePop={handelUpdateClick}
+                  openDeletePop={handelDeleteClick}
+                  moveTask={moveTask}
+                  changeTaskStatus={changeTaskStatus}
                 />
             </div>
        
