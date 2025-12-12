@@ -6,7 +6,8 @@
       "priority": "Medium",
       "status": "done",
       "id": "1",
-      "order": 2
+      "order": 2,
+      "isDeleted": false
     },
     {
       "title": "Composer",
@@ -29,7 +30,8 @@
       "description": "Vérifier déplacement dans la même colonne et persistance",
       "priority": "Low",
       "status": "in-progress",
-      "id": "5"
+      "id": "5",
+      "order": 2
     },
     {
       "title": "Tâche supprimée exemple",
@@ -37,7 +39,8 @@
       "priority": "Medium",
       "status": "done",
       "id": "2da9",
-      "order": 1
+      "order": 1,
+      "isDeleted": false
     },
     {
       "id": "66b9",
@@ -65,7 +68,8 @@
       "description": "des Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une \n",
       "priority": "Urgent",
       "status": "in-progress",
-      "id": "d15b"
+      "id": "d15b",
+      "order": 1
     },
     {
       "title": "hh",
@@ -73,15 +77,8 @@
       "priority": "Medium",
       "status": "in-progress",
       "id": "5dfe",
-      "isDeleted": false
-    },
-    {
-      "id": "4c8f",
-      "title": "new task",
-      "description": "new description",
-      "priority": "Urgent",
-      "status": "todo",
-      "isDeleted": false
+      "isDeleted": false,
+      "order": 3
     }
   ]
 }

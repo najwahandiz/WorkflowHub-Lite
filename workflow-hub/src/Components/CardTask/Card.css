@@ -68,7 +68,9 @@
 .updateBtn,
 .deleteBtn{
   border: none;
-  background: #05275e;
+  /* background: #05275e; */
+  background:transparent;
+  border: #05275e 1px solid;
   color: #dbe2f0;
   padding: 8px 22px;
   border-radius: 8px;

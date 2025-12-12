@@ -21,7 +21,8 @@ export default function Corbeille() {
   const restoreTask = (task) => {
     axios.put(`http://localhost:3001/tasks/${task.id}`, {
       ...task,
-      isDeleted: false
+      isDeleted: false,
+      status: "todo" 
     })
       .then(res => {
         console.log('Task restored:', res.data)
