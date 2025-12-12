@@ -4,31 +4,29 @@
       "title": "title test",
       "description": "des test",
       "priority": "Medium",
-      "status": "in-progress",
-      "id": "1"
+      "id": "1",
+      "order": 1
     },
     {
       "title": "Composer",
       "description": "Faire ",
       "priority": "Low",
-      "status": "todo",
       "id": "3",
-      "order": 2,
-      "isDeleted": true
+      "order": 4,
+      "isDeleted": false
     },
     {
       "title": "Pop-up Ajouter ",
       "description": "Créer le modal pour ajouter et valider une ",
       "priority": "Urgent",
-      "status": "todo",
+      "status": "in-progress",
       "id": "4",
-      "order": 1
+      "order": 2
     },
     {
       "title": "Tester Drag & Drop",
       "description": "Vérifier déplacement dans la même colonne et persistance",
       "priority": "Low",
-      "status": "in-progress",
       "id": "5",
       "order": 2
     },
@@ -36,9 +34,8 @@
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
       "priority": "Medium",
-      "status": "done",
       "id": "2da9",
-      "order": 1,
+      "order": 3,
       "isDeleted": false
     },
     {
@@ -66,9 +63,10 @@
       "title": "Créer le modal pour ajouter et valider une ",
       "description": "des Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ",
       "priority": "Urgent",
-      "status": "todo",
+      "status": "done",
       "id": "d15b",
-      "isDeleted": false
+      "isDeleted": false,
+      "order": 3
     },
     {
       "title": "hh",
@@ -76,8 +74,35 @@
       "priority": "Medium",
       "status": "todo",
       "id": "5dfe",
-      "isDeleted": true,
+      "isDeleted": false,
+      "order": 1
+    },
+    {
+      "id": "848b",
+      "title": "bhb",
+      "description": " jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk uuuuuuuuuuuuuu",
+      "priority": "Medium",
+      "status": "todo",
+      "isDeleted": false,
       "order": 3
+    },
+    {
+      "id": "1a67",
+      "title": "lllllllllllllnjfcxdwdxt",
+      "description": " bjh bdhbdivh IUEHFIVNacl,c",
+      "priority": "Medium",
+      "status": "done",
+      "isDeleted": false,
+      "order": 2
+    },
+    {
+      "id": "af08",
+      "title": "vnjvnurvh",
+      "description": "nvjrnvurhgorùgv",
+      "priority": "Medium",
+      "status": "todo",
+      "isDeleted": false,
+      "order": 2
     }
   ]
 }

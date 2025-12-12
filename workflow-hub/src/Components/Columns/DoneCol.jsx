@@ -1,13 +1,35 @@
-import React from 'react'
+import React, { useRef } from 'react'
+import { useDrop } from 'react-dnd'
 import Card from '../CardTask/Card'
 
-export default function DoneCol({task, openUpdatePop, openDeletePop, moveTask}) {
+const ItemTypes = { CARD: 'card' }
+
+export default function DoneCol({status,task, openUpdatePop, openDeletePop, moveTask, changeTaskStatus}) {
+    const ref = useRef(null)
+
+     // make column a drop target
+    const [{ isOver }, drop] = useDrop({
+      accept: ItemTypes.CARD,
+      drop(item) {
+        // if dropped on different status, change task status
+        if (item.status !== status) {
+          changeTaskStatus(item.id, status)
+        }
+      },
+      collect: (monitor) => ({
+        isOver: monitor.isOver()
+      })
+    })
+
+    drop(ref)
 
   // ensure tasks are sorted by order before mapping
   const sorted = (task || []).slice().sort((a, b) => (Number(a.order) || 0) - (Number(b.order) || 0))
   
   return (
-    <div className='taskColumn'>
+    <div ref={ref}
+      className='taskColumn'
+      style={{ backgroundColor: isOver ? '#e8f5e9' : 'transparent', transition: 'background-color 0.2s' }}>
         <h2 className='doneTitle'> Done</h2>
         <hr />
         { sorted && sorted.length >0 ? 
