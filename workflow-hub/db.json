@@ -4,10 +4,8 @@
       "title": "title test",
       "description": "des test",
       "priority": "Medium",
-      "status": "done",
-      "id": "1",
-      "order": 2,
-      "isDeleted": false
+      "status": "in-progress",
+      "id": "1"
     },
     {
       "title": "Composer",
@@ -15,7 +13,8 @@
       "priority": "Low",
       "status": "todo",
       "id": "3",
-      "order": 2
+      "order": 2,
+      "isDeleted": true
     },
     {
       "title": "Pop-up Ajouter ",
@@ -65,19 +64,19 @@
     },
     {
       "title": "Créer le modal pour ajouter et valider une ",
-      "description": "des Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une \n",
+      "description": "des Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ",
       "priority": "Urgent",
-      "status": "in-progress",
+      "status": "todo",
       "id": "d15b",
-      "order": 1
+      "isDeleted": false
     },
     {
       "title": "hh",
       "description": "hhhh",
       "priority": "Medium",
-      "status": "in-progress",
+      "status": "todo",
       "id": "5dfe",
-      "isDeleted": false,
+      "isDeleted": true,
       "order": 3
     }
   ]

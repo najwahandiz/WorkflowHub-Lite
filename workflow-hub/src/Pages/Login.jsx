@@ -23,11 +23,12 @@ export default function Login() {
     }
 
     setError("");
-    navigate("/");
+    navigate("/home");
   };
 
   return (
-    <div>
+    <div className="loginSection">
+      <div className="loginContainer"><div className="loginContainer">
       <h1>Login</h1>
 
       <input
@@ -47,6 +48,7 @@ export default function Login() {
 
       <button onClick={handleLogin}>Login</button>
 
+    </div></div>
     </div>
   );
 }
