@@ -12,7 +12,7 @@ export default function Navbar() {
             </div>
 
             <div className='Nav-links'>
-                <Link to="/"><FaHome /> Board</Link>
+                <Link to="/home"><FaHome /> Board</Link>
                 <Link to="/corbeille"><FaTrash /> Trash</Link>
             </div>
         </nav>   

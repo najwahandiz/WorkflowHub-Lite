@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import './Corbeille.css'
+import { FaTrash } from "react-icons/fa";
 
 export default function Corbeille() {
   const [deletedTasks, setDeletedTasks] = useState([])
@@ -21,7 +22,8 @@ export default function Corbeille() {
   const restoreTask = (task) => {
     axios.put(`http://localhost:3001/tasks/${task.id}`, {
       ...task,
-      isDeleted: false
+      isDeleted: false,
+      status: "todo" 
     })
       .then(res => {
         console.log('Task restored:', res.data)
@@ -41,11 +43,16 @@ export default function Corbeille() {
 
   return (
     <div className='corbeille-container'>
-      <h1>Trash</h1>
+      <h1 className='trashTitle'>Trash</h1>
       {deletedTasks.length === 0 ? (
-        <p>No deleted tasks</p>
+        <div className='noFindDiv'>
+          <h3>No deleted tasks found.</h3>
+          <FaTrash className='trashSym' size={100} color="#555" />
+        </div>
       ) : (
-        <table>
+        <div className='tableDiv'>
+          <h3>Deleted tasks can be restored or permanently removed</h3>
+          <table>
           <thead>
             <tr>
               <th>Title</th>
@@ -61,23 +68,29 @@ export default function Corbeille() {
                 <td>{task.description}</td>
                 <td>{task.priority}</td>
                 <td>
-                  <button 
+                  <div className='buttonDiv'>
+                    <button 
                     className='restoreBtn'
                     onClick={() => restoreTask(task)}
                   >
                     Restore
                   </button>
                   <button 
-                    className='deleteBtn'
+                    className='deleteTotalyBtn'
                     onClick={() => permanentDelete(task.id)}
                   >
                     Delete Permanently
                   </button>
+                  </div>
                 </td>
               </tr>
             ))}
           </tbody>
         </table>
+        </div>
+
+        
+        
       )}
     </div>
   )

@@ -17,6 +17,7 @@ export default function deletePopUp({task, closePopUp, fetchTasks}) {
           .catch(err=>console.log("error moving task",err))
   }        
 
+
   return (
     <div className='popUpOverlay'>
       <div className='popUpContainer'>

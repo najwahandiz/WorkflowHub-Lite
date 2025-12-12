@@ -1,41 +1,49 @@
-* {
+/* * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
+} */
 
-body {
+/* body {
   font-family: "Segoe UI", Arial, sans-serif;
   min-height: 100vh;
   background: radial-gradient(circle at 0% 0%, #bcd8ff 0%, #86afe7 30%, #245994 85%);
+} */
+
+body {
+  background: radial-gradient(circle at 0% 0%, #4a678f 0%, #29518a 30%, #022750 85%);
 }
 
-#root {
-  min-height: 100vh;
+.loginSection {
+  min-height: 80vh;
   display: flex;
+  grid:12px;
   align-items: center;
   justify-content: center;
+  padding-top: 8px;
 }
 
-#root > div {
+.loginContainer {
   width: 100%;
   max-width: 720px;
-  padding: 170px 70px 120px;
+  padding: 8px 8px 8px;
   color: #ffffff;
   background: transparent;     
   text-align: left;
+  margin-top: 5px;
 }
 
-#root > div h1 {
+.loginContainer h1 {
   text-align: center;
   font-size: 26px;
   letter-spacing: 6px;
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 70px;
+  margin-top: 5px;
 }
 
-#root > div input {
+.loginContainer input {
   width: 100%;
   border: none;
   border-bottom: 1px solid rgba(255, 255, 255, 0.9);
@@ -47,11 +55,11 @@ body {
   outline: none;
 }
 
-#root > div input::placeholder {
+.loginContainer input::placeholder {
   color: rgba(255, 255, 255, 0.85);
 }
 
-#root > div button {
+.loginContainer button {
   display: block;
   margin: 30px auto 0;
   width: 260px;
@@ -70,7 +78,7 @@ body {
     box-shadow 0.15s ease;
 }
 
-#root > div button:hover {
+.loginContainer button:hover {
   background: #082f5a;
   transform: translateY(-1px);
   box-shadow: 0 18px 45px rgba(0, 0, 0, 0.5);
@@ -84,22 +92,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  #root > div {
+.loginContainer {
     padding: 140px 30px 80px;
   }
 
-  #root > div h1 {
+.loginContainer h1 {
     font-size: 22px;
     letter-spacing: 4px;
     margin-bottom: 50px;
   }
 
-  #root > div input {
+.loginContainer input {
     font-size: 14px;
     margin-bottom: 25px;
   }
 
-  #root > div button {
+.loginContainer button {
     width: 70%;
     font-size: 13px;
     letter-spacing: 3px;

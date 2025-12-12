@@ -1,0 +1,111 @@
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #dbe2f0;
+}
+
+/* Header */
+.corbeille-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px;
+  margin: 20px;
+  margin-top: 80px;
+  color: #dbe2f0;
+}
+
+.trashTitle{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+  
+}
+
+.corbeille-container h3 {
+  font-size: 26px;
+  color: #8fa3c8;
+  margin-top: 5px;
+}
+
+.noFindDiv{
+  margin-top: 50px;
+  text-align: center;
+  width: 100%;
+}
+
+ /*=========== Table styles */
+
+.tableDiv{
+  width: 100%;
+  margin-top: 20px;
+}
+
+.table-container {
+  width: 100%;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 32px;
+}
+th, td {
+  border: 1px solid #bac0ca;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background-color: #02102cab;
+  text-align: center;
+}
+
+/* tr:nth-child(even) {
+  background-color: #111827;
+} */
+
+tr:hover {
+  background-color: #031538;
+}
+
+
+.buttonDiv{
+  display: flex;
+  gap: 10px;
+}
+
+ button {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+
+button.deleteTotalyBtn {
+  background: #bb0707;
+}
+
+
+button.deleteTotalyBtn:hover {
+  background: #b91c1c;
+}
+button.restoreBtn {
+  background: #16a34a;
+}
+
+button.restoreBtn:hover {
+  background: #15803d;
+}

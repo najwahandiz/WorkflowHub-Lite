@@ -1,67 +1,102 @@
-.body{
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 5px;
-    padding: 0;
+.card-task {
+  background: #0f1629;
+  padding: 28px;
+  border-radius: 14px;
+  border: #9fb0d1 1px solid;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: 0.3s;
+  position: relative;
+  border-left: 5px solid transparent;
 }
 
-.card-task{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    margin: 1px 15px;
-    padding-left: 8px;  
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    max-height: 200px;
-    height: 250px;
-    width: 350px;
-    max-width: 400px;
-    transition: all 0.3s ease;
-}
-
+/* Card hover */
 .card-task:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    border-color: #0F3460;
-}    
-
-.card-task h4,
-.card-task p{
-    margin: 5px;
-    padding: 5px;
-    transition: color 0.3s ease;
+  transform: translateY(-4px);
 }
 
-.card-task:hover h4,
-.card-task:hover p {
-    color: #0F3460;
+/* Title */
+.card-task h4 {
+  margin: 0;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 600;
 }
 
-.divBtn{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 5px 20px;
+/* Description */
+.card-task p {
+  margin: 0;
+  font-size: 13px;
+  color: #9fb0d1;
 }
 
-.updateBtn , .deleteBtn{
-    background-color: #0F3460;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    border-radius: 3px;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    margin-top: 0;
+/* PRIORITY BADGES (exact style) */
+.priority-badge {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 11px;
+  font-weight: 500;
+  width: fit-content;
 }
 
-.updateBtn:hover, .deleteBtn:hover {
-    background-color: #0a2445;
-    transform: scale(1.05);
+.priority-low {
+  background: rgba(98, 165, 128, 0.774);
+  color: #054e1d;
 }
 
-.updateBtn:active, .deleteBtn:active {
-    transform: scale(0.98);
+.priority-medium {
+  background: rgba(255, 179, 0, 0.295);
+  color: #ffb300d8;
 }
+
+.priority-urgent {
+  background: rgba(187, 46, 46, 0.281);
+  color: #ff00007c;
+}
+
+/* Buttons */
+.divBtn {
+  display: flex;
+  justify-content: space-between;
+  max-height: 38px;
+  margin-top: 2px;
+  margin-bottom: 0px;
+}
+
+.updateBtn,
+.deleteBtn{
+  border: none;
+  /* background: #05275e; */
+  background:transparent;
+  border: #05275e 1px solid;
+  color: #dbe2f0;
+  padding: 8px 22px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.divBtn h5 {
+  margin: 0;
+  font-size: 12px;
+  /* color: #9fb0d1; */
+  align-self: center;
+}
+
+.updateBtn:hover,
+.deleteBtn:hover {
+  background: #334155;
+  transform: scale(1.05);
+}
+
+/* LEFT COLOR BORDER BASED ON PRIORITY */
+.card-task.low { border-left-color: #00c853; }
+.card-task.medium { border-left-color: #ffb30080; }
+.card-task.urgent { border-left-color:  rgba(226, 52, 52, 0.911); }
+
+
+
+

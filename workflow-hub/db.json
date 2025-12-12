@@ -4,31 +4,42 @@
       "title": "title test",
       "description": "des test",
       "priority": "Medium",
-      "status": "todo",
+      "status": "in-progress",
       "id": "1"
     },
     {
       "title": "Composer",
       "description": "Faire ",
       "priority": "Low",
-      "status": "in-progress",
-      "id": "3"
+      "status": "todo",
+      "id": "3",
+      "order": 2,
+      "isDeleted": true
     },
     {
-      "id": "5",
+      "title": "Pop-up Ajouter ",
+      "description": "Créer le modal pour ajouter et valider une ",
+      "priority": "Urgent",
+      "status": "todo",
+      "id": "4",
+      "order": 1
+    },
+    {
       "title": "Tester Drag & Drop",
       "description": "Vérifier déplacement dans la même colonne et persistance",
       "priority": "Low",
-      "status": "done",
-      "isDeleted": false,
-      "order": 5
+      "status": "in-progress",
+      "id": "5",
+      "order": 2
     },
     {
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
       "priority": "Medium",
       "status": "done",
-      "id": "7"
+      "id": "2da9",
+      "order": 1,
+      "isDeleted": false
     },
     {
       "id": "66b9",
@@ -45,18 +56,28 @@
       "status": "To Do"
     },
     {
-      "id": "1d8a",
-      "title": "hjhkjjkj",
-      "description": "jjjjkkkl",
-      "priority": "Medium",
+      "id": "6ef5",
+      "title": "nnn",
+      "description": "hh",
+      "priority": "Low",
       "status": "To Do"
     },
     {
-      "id": "5aab",
-      "title": "ghhh",
-      "description": "ad creatt",
+      "title": "Créer le modal pour ajouter et valider une ",
+      "description": "des Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ajouter et valider une Créer le modal pour ",
       "priority": "Urgent",
-      "status": "To Do"
+      "status": "todo",
+      "id": "d15b",
+      "isDeleted": false
+    },
+    {
+      "title": "hh",
+      "description": "hhhh",
+      "priority": "Medium",
+      "status": "todo",
+      "id": "5dfe",
+      "isDeleted": true,
+      "order": 3
     }
   ]
 }
