@@ -5,22 +5,14 @@
       "description": "des test",
       "priority": "Medium",
       "status": "todo",
-      "id": "1",
-      "isDeleted": false
+      "id": "1"
     },
     {
       "title": "Composer",
       "description": "Faire ",
       "priority": "Low",
-      "status": "done",
+      "status": "in-progress",
       "id": "3"
-    },
-    {
-      "title": "Pop-up Ajouter ",
-      "description": "Créer le modal pour ajouter et valider une ",
-      "priority": "High",
-      "status": "done",
-      "id": "4"
     },
     {
       "id": "5",
@@ -32,13 +24,11 @@
       "order": 5
     },
     {
-      "id": "7",
       "title": "Tâche supprimée exemple",
       "description": "Ceci est dans la corbeille (isDeleted = true)",
       "priority": "Medium",
-      "status": "todo",
-      "isDeleted": false,
-      "order": 7
+      "status": "done",
+      "id": "7"
     },
     {
       "id": "66b9",
@@ -51,6 +41,20 @@
       "id": "f43c",
       "title": "test 5555",
       "description": "jiojdoij",
+      "priority": "Urgent",
+      "status": "To Do"
+    },
+    {
+      "id": "1d8a",
+      "title": "hjhkjjkj",
+      "description": "jjjjkkkl",
+      "priority": "Medium",
+      "status": "To Do"
+    },
+    {
+      "id": "5aab",
+      "title": "ghhh",
+      "description": "ad creatt",
       "priority": "Urgent",
       "status": "To Do"
     }
