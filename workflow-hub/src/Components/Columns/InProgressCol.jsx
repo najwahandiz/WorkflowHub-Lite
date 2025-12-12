@@ -1,15 +1,28 @@
 import React from 'react'
 import Card from '../CardTask/Card'
 
-export default function InProgressCol({task, openUpdatePop, openDeletePop}) {
+export default function InProgressCol({task, openUpdatePop, openDeletePop, moveTask}) {
+
+  // ensure tasks are sorted by order before mapping
+  const sorted = (task || []).slice().sort((a, b) => (Number(a.order) || 0) - (Number(b.order) || 0))
+
   return (
     <div className='taskColumn'>
-        <h2>In Progress</h2>
+        <h2 className='inProgressTitle'>In Progress</h2>
         <hr />
 
-        {task.map((taskItem)=>(
-            <Card  key={taskItem.id} task={taskItem} openUpdatePop={openUpdatePop} openDeletePop={openDeletePop}/>
-        ))}
+        {sorted && sorted.length > 0 ?  
+           sorted.map((taskItem, index)=>(
+                    <Card
+                      key={taskItem.id} 
+                      task={taskItem} 
+                      index={index}
+                      openUpdatePop={openUpdatePop} 
+                      openDeletePop={openDeletePop}  
+                      moveTask={moveTask} 
+                    />
+           
+                )) : <h3>No tasks available</h3>}     
         
     </div>
   )

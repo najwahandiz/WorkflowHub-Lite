@@ -1,4 +1,61 @@
 body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #031131;   /* Dark background like screenshot */
+  color: #dbe2f0;
+}
+
+/* Header */
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 25px;
+  margin: 20px;
+  color: #dbe2f0;
+}
+
+.heroSection h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.heroSection h3 {
+  font-size: 16px;
+  color: #8fa3c8;
+  margin-top: 5px;
+}
+
+/* Add Task button */
+.addBtn {
+  background: #2563eb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.addBtn:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+.task-board {
+  display: flex;
+  gap: 25px;
+  padding: 20px 40px;
+}
+
+
+
+
+
+/* body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -43,4 +100,4 @@ body {
 
 .addBtn:active {
     transform: scale(0.98);
-}
+} */

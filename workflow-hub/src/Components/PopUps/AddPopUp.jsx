@@ -7,7 +7,7 @@ function AddPopUp({ open, onClose, addTask }) {
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [priority, setPriority] = useState("Medium");
-  const [status, setStatus] = useState("To Do");
+  const [status, setStatus] = useState("todo");
 
   const handleTask = (e) => {
     e.preventDefault();
@@ -63,9 +63,9 @@ function AddPopUp({ open, onClose, addTask }) {
                 value={status} 
                 onChange={(e) => setStatus(e.target.value)}
               >
-                <option value="To Do">To Do</option>
-                <option value="In Progress">In Progress</option>
-                <option value="Done">Done</option>
+                <option value="todo">To Do</option>
+                <option value="in-progress">In Progress</option>
+                <option value="done">Done</option>
               </select>
             </div>
           </div>
