@@ -22,7 +22,7 @@ export default function Login() {
       return;
     }
 
-    setError("");
+    setError("");      // نمسحو الخطأ إلا كان
     navigate("/");
   };
 
